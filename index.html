@@ -280,7 +280,7 @@
 
   <!-- HERO -->
   <section class="hero" id="inicio">
-    <video autoplay muted loop playsinline preload="metadata" poster="videos/sobre-poster.jpg" aria-hidden="true">
+    <video id="heroVideo" autoplay muted loop playsinline preload="metadata" poster="videos/sobre-poster.jpg" aria-hidden="true">
       <source src="videos/sobre.mp4" type="video/mp4">
     </video>
     <div class="container">
@@ -573,11 +573,19 @@
     }, { threshold: .15 });
     document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-    // Vídeo do Quem Somos: toca só quando visível (economiza dados)
+    // Vídeo do Quem Somos: toca só quando visível e continua do ponto em que o vídeo do hero está
     const sv = document.getElementById('sobreVideo');
+    const hv = document.getElementById('heroVideo');
     if (sv) {
       new IntersectionObserver(entries => {
-        entries.forEach(e => { e.isIntersecting ? sv.play() : sv.pause(); });
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            if (hv && hv.currentTime > 0) sv.currentTime = hv.currentTime;
+            sv.play();
+          } else {
+            sv.pause();
+          }
+        });
       }, { threshold: .25 }).observe(sv);
     }
 
