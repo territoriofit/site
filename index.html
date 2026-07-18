@@ -53,7 +53,8 @@
     "openingHoursSpecification": [
       { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "05:00", "closes": "23:00" },
       { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "05:00", "closes": "22:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday"], "opens": "08:00", "closes": "13:00" }
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "17:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "08:00", "closes": "13:00" }
     ],
     "sameAs": [
       "https://www.instagram.com/academiaterritoriofit/"
@@ -191,6 +192,15 @@
     .hour-card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:30px;text-align:center}
     .hour-card h3{color:var(--orange);font-size:.85rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px}
     .hour-card strong{font-size:1.35rem;font-weight:800}
+
+    /* Grade de aulas */
+    .grade-wrap{overflow-x:auto;margin-top:46px;border:1px solid var(--line);border-radius:16px;background:var(--panel-2)}
+    table.grade{width:100%;border-collapse:collapse;min-width:760px;font-size:.85rem}
+    .grade th{background:rgba(240,138,29,.14);color:var(--orange);text-transform:uppercase;letter-spacing:.06em;font-size:.75rem;padding:14px 10px}
+    .grade td{border-top:1px solid var(--line);padding:13px 10px;text-align:center}
+    .grade td.h{color:var(--orange);font-weight:800;white-space:nowrap}
+    .grade td.off{color:#4a4e57}
+    .grade tr:hover td{background:rgba(255,255,255,.03)}
 
     /* Instagram */
     .insta-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:46px 0 34px}
@@ -445,11 +455,33 @@
       <div class="hours-grid">
         <div class="hour-card reveal"><h3>Segunda a quinta</h3><strong>5h às 23h</strong></div>
         <div class="hour-card reveal"><h3>Sexta</h3><strong>5h às 22h</strong></div>
-        <div class="hour-card reveal"><h3>Sábado</h3><strong>8h às 13h</strong></div>
+        <div class="hour-card reveal"><h3>Sábado</h3><strong>8h às 17h</strong></div>
         <div class="hour-card reveal"><h3>Domingos e feriados</h3><strong>8h às 13h</strong></div>
       </div>
-      <p class="lead" style="margin-top:30px">Quer saber a grade completa de aulas coletivas da semana?</p>
-      <a class="btn btn-primary wa" style="margin-top:18px" href="https://wa.me/5516988772000?text=Ol%C3%A1!%20Pode%20me%20enviar%20a%20grade%20de%20hor%C3%A1rios%20das%20aulas%20coletivas%3F" target="_blank" rel="noopener">Receber grade de aulas no WhatsApp</a>
+
+      <h2 style="margin-top:70px">Grade de aulas coletivas</h2>
+      <div class="divider"></div>
+      <div class="grade-wrap reveal">
+        <table class="grade" aria-label="Grade de aulas coletivas da semana">
+          <thead>
+            <tr><th>Horário</th><th>Segunda</th><th>Terça</th><th>Quarta</th><th>Quinta</th><th>Sexta</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="h">06:10</td><td>Funcional</td><td class="off">—</td><td>Funcional</td><td class="off">—</td><td class="off">—</td></tr>
+            <tr><td class="h">07:00</td><td>Ritmos</td><td>Bike Indoor</td><td>Ritmos</td><td>Bike Indoor</td><td>Ritmos</td></tr>
+            <tr><td class="h">08:10</td><td>Pilates</td><td>Funcional</td><td>Pilates</td><td>Funcional</td><td>Bike Indoor</td></tr>
+            <tr><td class="h">09:10</td><td>Pilates</td><td class="off">—</td><td>Pilates</td><td class="off">—</td><td class="off">—</td></tr>
+            <tr><td class="h">12:00</td><td class="off">—</td><td>Bike HIIT 30</td><td class="off">—</td><td>Bike HIIT 30</td><td class="off">—</td></tr>
+            <tr><td class="h">17:30</td><td class="off">—</td><td>Bike HIIT 30</td><td class="off">—</td><td>Bike HIIT 30</td><td class="off">—</td></tr>
+            <tr><td class="h">18:15</td><td>Bike Indoor 60 · FitDance</td><td>Jump</td><td>Bike Indoor 60 · FitDance</td><td>Jump</td><td>FitDance</td></tr>
+            <tr><td class="h">19:15</td><td>Bike Indoor</td><td>Bike Indoor</td><td>Bike Indoor</td><td>Bike Indoor</td><td>Bike Indoor</td></tr>
+            <tr><td class="h">19:15</td><td>Funcional</td><td>FitDance</td><td>Funcional</td><td>FitDance</td><td class="off">—</td></tr>
+            <tr><td class="h">20:10</td><td>Pilates</td><td>Funcional</td><td>Pilates</td><td>Funcional</td><td class="off">—</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="lead" style="margin-top:26px">Musculação liberada durante todo o horário de funcionamento. Escolheu sua aula? Garanta sua vaga:</p>
+      <a class="btn btn-primary wa" style="margin-top:18px" href="https://wa.me/5516988772000?text=Ol%C3%A1!%20Quero%20agendar%20uma%20aula%20experimental%20gr%C3%A1tis%20numa%20aula%20coletiva%20%F0%9F%94%A5" target="_blank" rel="noopener">Agendar aula experimental grátis</a>
     </div>
   </section>
 
