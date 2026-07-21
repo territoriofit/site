@@ -258,6 +258,25 @@
       .insta-grid img{height:340px}
     }
   </style>
+  <!-- Google Ads (gtag.js) — conversão Clique WhatsApp -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-689347562"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-689347562');
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('a[href*="wa.me"], a[href*="api.whatsapp.com"]').forEach(function (el) {
+        el.addEventListener('click', function () {
+          gtag('event', 'conversion', {
+            'send_to': 'AW-689347562/uNNZCMrRl9QcEOq32sgC',
+            'value': 1.0,
+            'currency': 'BRL'
+          });
+        });
+      });
+    });
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
