@@ -15,6 +15,10 @@
   });
   if (attribution.gclid || attribution.gbraid || attribution.wbraid) {
     attribution.source = 'google'; attribution.medium = 'cpc';
+  } else if ((attribution.source || '').toLowerCase() === 'google') {
+    var medium = (attribution.medium || '').toLowerCase();
+    attribution.source = medium === 'organic' ? 'google_organic'
+      : /^(cpc|ppc|paid|paid_search|paidsearch)$/.test(medium) ? 'google' : 'google_unclassified';
   }
   var referrerHost = '';
   try { referrerHost = new URL(document.referrer).hostname; } catch (_) {}
