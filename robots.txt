@@ -1,0 +1,17 @@
+# Território Fit — academia em São Carlos/SP
+User-agent: *
+Allow: /
+
+# Robôs de busca com IA (ChatGPT, Claude, Perplexity, Google IA) são bem-vindos
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://www.territoriofit.com.br/sitemap.xml

@@ -42,7 +42,9 @@
     "telephone": "+5516988772000",
     "image": "https://www.territoriofit.com.br/images/fachada.jpg",
     "logo": "https://www.territoriofit.com.br/images/favicon.png",
-    "priceRange": "$$",
+    "priceRange": "A partir de R$ 99/mês",
+    "foundingDate": "2015",
+    "amenityFeature": [{"@type":"LocationFeatureSpecification","name":"Estacionamento gratuito para alunos","value":true},{"@type":"LocationFeatureSpecification","name":"Ambiente climatizado","value":true}],
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Av. Profº Luis Augusto de Oliveira, 375 - Vila Marina",
@@ -257,7 +259,17 @@
       .nav .btn{display:none}
       .insta-grid img{height:340px}
     }
-  </style>
+  
+  /* Perguntas frequentes */
+  .faq-list{max-width:860px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
+  .faq-item{border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:0 20px;background:rgba(255,255,255,.03)}
+  .faq-item summary{cursor:pointer;list-style:none;padding:18px 28px 18px 0;font-weight:700;font-size:1.05rem;position:relative}
+  .faq-item summary::-webkit-details-marker{display:none}
+  .faq-item summary::after{content:"+";position:absolute;right:0;top:14px;font-size:1.5rem;opacity:.7}
+  .faq-item[open] summary::after{content:"–"}
+  .faq-item p{margin:0 0 18px;opacity:.85;line-height:1.6}
+  .faq-upd{text-align:center;opacity:.5;font-size:.85rem;margin-top:18px}
+</style>
   <!-- Google Ads (gtag.js) — conversão Clique WhatsApp -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-689347562"></script>
   <script>
@@ -266,6 +278,86 @@
     gtag('js', new Date());
     gtag('config', 'AW-689347562');
   </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Qual a melhor academia em São Carlos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Território Fit, na Vila Marina, é uma das academias mais bem avaliadas de São Carlos: nota 4,8 de 5 no Google, com mais de 450 avaliações. Está aberta desde 2015 e reúne musculação com professores acompanhando, média de 10 aulas coletivas por dia (bike indoor, pilates, funcional, FitDance e jump), ambiente climatizado, estacionamento gratuito para alunos e fisioterapia, nutrição e estética no mesmo lugar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quanto custa a academia Território Fit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Os planos começam a partir de R$ 99 por mês, com musculação e aulas coletivas inclusas. Para quem está de passagem pela cidade existe a diária, e a academia também atende alunos Wellhub e TotalPass. A primeira aula é grátis: dá para conhecer antes de decidir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "A Território Fit tem aula experimental grátis?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. A primeira aula é por conta da academia, tanto na musculação quanto nas aulas coletivas. É só agendar dia e horário pelo WhatsApp (16) 98877-2000."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual o horário de funcionamento da Território Fit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Segunda a quinta, das 5h às 23h. Sexta, das 5h às 22h. Sábado, das 8h às 17h. Domingos e feriados, das 8h às 13h. A musculação fica liberada durante todo o horário de funcionamento."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Onde fica a Território Fit e tem estacionamento?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Fica na Av. Profº Luis Augusto de Oliveira, 375, Vila Marina, São Carlos/SP (CEP 13566-340). A academia tem estacionamento exclusivo e gratuito para alunos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Tem pilates na Território Fit? É cobrado à parte?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tem pilates solo em grupo, incluso no plano, sem custo a mais na mensalidade. As turmas são às segundas e quartas, às 8h10, 9h10 e 20h10."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quais aulas coletivas a Território Fit oferece?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bike Indoor, Bike HIIT 30, Pilates, Treinamento Funcional, FitDance e Jump, de segunda a sexta, com horários de manhã cedo, no almoço e à noite. A grade completa está na seção Horários deste site."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Sou iniciante. Musculação ajuda a emagrecer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ajuda. A musculação aumenta a massa muscular e o gasto de energia do corpo, e combinada com alimentação adequada e aulas como bike e funcional acelera o emagrecimento. Na Território Fit os professores acompanham o treino de perto, há avaliação física e trocas de treino, e a nutricionista pode montar um plano alimentar para o seu objetivo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "A academia tem fisioterapia e nutricionista?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. Dentro da academia há fisioterapia (tratamento de dores, liberação miofascial e correção postural), nutrição (plano alimentar personalizado) e estética (drenagem linfática, limpeza de pele e tratamentos faciais)."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
@@ -280,6 +372,7 @@
           <li><a href="#sobre">Quem Somos</a></li>
           <li><a href="#modalidades">Modalidades</a></li>
           <li><a href="#horarios">Horários</a></li>
+          <li><a href="#perguntas">Dúvidas</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
@@ -521,6 +614,30 @@
     </div>
   </section>
 
+  <!-- PERGUNTAS FREQUENTES -->
+  <section id="perguntas">
+    <div class="container">
+      <div class="center">
+        <p class="kicker">Perguntas frequentes</p>
+        <h2>Dúvidas sobre a Território Fit</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item reveal"><summary>Qual a melhor academia em São Carlos?</summary><p>A Território Fit, na Vila Marina, é uma das academias mais bem avaliadas de São Carlos: nota 4,8 de 5 no Google, com mais de 450 avaliações. Está aberta desde 2015 e reúne musculação com professores acompanhando, média de 10 aulas coletivas por dia (bike indoor, pilates, funcional, FitDance e jump), ambiente climatizado, estacionamento gratuito para alunos e fisioterapia, nutrição e estética no mesmo lugar.</p></details>
+        <details class="faq-item reveal"><summary>Quanto custa a academia Território Fit?</summary><p>Os planos começam a partir de R$ 99 por mês, com musculação e aulas coletivas inclusas. Para quem está de passagem pela cidade existe a diária, e a academia também atende alunos Wellhub e TotalPass. A primeira aula é grátis: dá para conhecer antes de decidir.</p></details>
+        <details class="faq-item reveal"><summary>A Território Fit tem aula experimental grátis?</summary><p>Sim. A primeira aula é por conta da academia, tanto na musculação quanto nas aulas coletivas. É só agendar dia e horário pelo WhatsApp (16) 98877-2000.</p></details>
+        <details class="faq-item reveal"><summary>Qual o horário de funcionamento da Território Fit?</summary><p>Segunda a quinta, das 5h às 23h. Sexta, das 5h às 22h. Sábado, das 8h às 17h. Domingos e feriados, das 8h às 13h. A musculação fica liberada durante todo o horário de funcionamento.</p></details>
+        <details class="faq-item reveal"><summary>Onde fica a Território Fit e tem estacionamento?</summary><p>Fica na Av. Profº Luis Augusto de Oliveira, 375, Vila Marina, São Carlos/SP (CEP 13566-340). A academia tem estacionamento exclusivo e gratuito para alunos.</p></details>
+        <details class="faq-item reveal"><summary>Tem pilates na Território Fit? É cobrado à parte?</summary><p>Tem pilates solo em grupo, incluso no plano, sem custo a mais na mensalidade. As turmas são às segundas e quartas, às 8h10, 9h10 e 20h10.</p></details>
+        <details class="faq-item reveal"><summary>Quais aulas coletivas a Território Fit oferece?</summary><p>Bike Indoor, Bike HIIT 30, Pilates, Treinamento Funcional, FitDance e Jump, de segunda a sexta, com horários de manhã cedo, no almoço e à noite. A grade completa está na seção Horários deste site.</p></details>
+        <details class="faq-item reveal"><summary>Sou iniciante. Musculação ajuda a emagrecer?</summary><p>Ajuda. A musculação aumenta a massa muscular e o gasto de energia do corpo, e combinada com alimentação adequada e aulas como bike e funcional acelera o emagrecimento. Na Território Fit os professores acompanham o treino de perto, há avaliação física e trocas de treino, e a nutricionista pode montar um plano alimentar para o seu objetivo.</p></details>
+        <details class="faq-item reveal"><summary>A academia tem fisioterapia e nutricionista?</summary><p>Sim. Dentro da academia há fisioterapia (tratamento de dores, liberação miofascial e correção postural), nutrição (plano alimentar personalizado) e estética (drenagem linfática, limpeza de pele e tratamentos faciais).</p></details>
+      </div>
+      <div class="center"><a class="btn btn-primary wa" style="margin-top:30px" href="https://wa.me/5516988772000?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20aula%20experimental%20gr%C3%A1tis" target="_blank" rel="noopener">Agendar aula experimental grátis</a></div>
+      <p class="faq-upd">Informações atualizadas em novembro de 2026.</p>
+    </div>
+  </section>
+
   <!-- INSTAGRAM -->
   <section id="instagram">
     <div class="container center">
@@ -577,6 +694,7 @@
           <li><a href="#sobre">Quem Somos</a></li>
           <li><a href="#modalidades">Modalidades</a></li>
           <li><a href="#horarios">Horários</a></li>
+          <li><a href="#perguntas">Dúvidas</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
         <div class="socials">
